@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#root {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  /*background-color: #a6845f;*/
+}
+body{
+  @apply bg-black
+}
+.headerContainer {
+  @apply fixed flex flex-row justify-end py-5 px-[8rem] w-full z-10000 bg-black
+}
+.headerFiller1{
+  @apply w-4/20
+}
+.headerFiller2{
+  @apply w-7/40
+}
+.headerItems{
+  @apply flex justify-around items-center w-1/2 uppercase tracking-wider
+}
+.headerButtons{
+  @apply flex justify-between items-center w-5/40
+}
+.headerItem{
+  @apply flex flex-row
+}
+#selected{
+  @apply text-yellow-200
+}
+.headerButton{
+  @apply cursor-pointer
+}
+.heroContainer{
+  @apply flex flex-row mb-10 pt-25 justify-between px-[8rem]
+}
+.heroText{
+  @apply relative flex flex-col justify-around w-2/5 text-left
+}
+.heroBigText{
+  @apply text-[100px] font-medium leading-[1.3]
+}
+.heroSmallText{
+  @apply text-gray-300 text-[24px]
+}
+.heroImageCon{
+  @apply relative w-11/20 bg-stone-800
+}
+.heroImageTop{
+  @apply flex flex-row
+}
+.heroStatsCon{
+  @apply flex justify-center w-full
+}
+.heroStats{
+  @apply flex flex-col justify-around text-left
+}
+.heroStatTop{
+  @apply text-4xl font-bold my-2
+}
+.heroImageBottom{
+  @apply flex py-3 px-8
+}
+.heroBottomText{
+  @apply flex flex-col justify-center text-left ml-5
+}
+.heroBTText{
+  @apply text-[24px] font-medium
+}
+.heroBBText{
+  @apply text-gray-300
+}
+.heroPlayImg{
+  @apply absolute top-0 bottom-0 my-auto -start-[69px]
+}
+.heroScrollCon{
+  @apply flex justify-center my-10
+}
+.heroScroll{
+  @apply tracking-wide transform-[rotate(-90deg)] h-fit
+}
+.heroShapeImg{
+  @apply absolute -bottom-10 end-20
+}
+.logosCon{
+  @apply flex justify-around my-10 py-15 px-[8rem]
+}
+.logoImg{
+  @apply object-contain
+}
+.aboutTitle{
+  @apply text-[18px] uppercase tracking-wider text-gray-400 text-left
+}
+.text-outline {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  z-index: auto;
+}
