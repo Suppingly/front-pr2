@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@tailwind utilities;
+.teamContainer{
+  @apply px-[8rem] py-25
+}
+.teamTop{
+  @apply flex flex-row justify-between mb-12 w-full
+}
+.teamLeft{
+  @apply w-1/2 text-left
+}
+.team{
+  @apply text-[18px] uppercase tracking-wider text-gray-400 text-left mb-2
+}
+.teamMainText{
+  @apply text-4xl md:text-5xl lg:text-5xl font-medium leading-tight
+}
+.teamRight{
+  @apply w-1/2 flex flex-col items-end
+}
+.teamRightText{
+  @apply text-gray-300 text-left h-1/2 w-4/5
+}
+.teamGrid{
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8
+}
+.teamImg{
+  @apply w-full
+}
+.teamInfo{
+  @apply py-6 text-left
+}
+.teamName{
+  @apply text-2xl font-bold
+}
+.teamJob{
+  @apply text-gray-400 text-sm mt-1
+}
+.teamSoc{
+  @apply absolute bottom-0 right-0 w-10 h-7/20 bg-[#E3B27D] flex flex-col items-center justify-around py-3
+}
+.teamPages{
+  @apply flex justify-center mt-8 space-x-2
+}

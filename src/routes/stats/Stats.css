@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@tailwind utilities;
+.statsContainer{
+  @apply py-25
+}
+.statsTable{
+  @apply flex flex-row justify-around bg-stone-800 py-30 px-[8rem]
+}
+.statsCard{
+  @apply relative flex flex-col items-center text-center w-3/10
+}
+.statsImg{
+  @apply absolute -top-0 -left-0
+}
+.statsTopText{
+  @apply absolute inline-block text-5xl font-bold mb-2
+}
+.statsBottom{
+  @apply flex flex-row justify-between gap-6 items-center mt-15
+}
+.statsDash{
+  @apply w-10 h-0.25 bg-white
+}
+.statsBottomText{
+  @apply text-[52px] font-bold
+}
+.statsText{
+  @apply text-gray-400 mt-6 w-full text-xl text-left
+}
+.statsCardUl{
+  @apply mt-8 space-y-2 text-left text-gray-100 text-[18px] font-medium w-full
+}
+.statsCardLi{
+  @apply flex items-start
+}
+.statsLiDot{
+  @apply inline-block w-2 h-2 bg-white rounded-full mt-2.5 mr-3
+}
+.text-outline {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  z-index: auto;
+}

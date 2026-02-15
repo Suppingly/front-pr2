@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@tailwind utilities;
+#root {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  /*background-color: #a6845f;*/
+}
+body{
+  @apply bg-black
+}
+.headerContainer {
+  @apply fixed flex flex-row justify-end py-5 px-[8rem] w-full z-10000 bg-black
+}
+.headerFiller1{
+  @apply w-4/20
+}
+.headerFiller2{
+  @apply w-7/40
+}
+.headerItems{
+  @apply flex justify-around items-center w-2/3 uppercase tracking-wider
+}
+.headerButtons{
+  @apply flex justify-between items-center w-5/40
+}
+.headerButton{
+  @apply cursor-pointer
+}
+.headerItem{
+  @apply flex flex-row hover:text-yellow-200
+}
+#selected{
+  @apply text-yellow-200
+}
+.btnCir{
+  @apply absolute top-0 left-0 size-13 bg-gray-800 -z-1 rounded-full
+}
+.buttons{
+  @apply flex items-center gap-6 h-1/2
+}
+.button{
+  @apply flex justify-center p-4 size-12 rounded-full bg-stone-800 hover:bg-stone-900 cursor-pointer
+}

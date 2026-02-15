@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@tailwind utilities;
+.endContainer{
+  @apply relative flex items-end mb-30
+}
+.endImg{
+  @apply absolute top-0 right-0 -z-1
+}
+.endLink{
+  @apply flex flex-row justify-start p-15 mt-70 bg-stone-900 w-9/10
+}
+.endText{
+  @apply text-7xl/20 text-left font-bold mr-30
+}
+.endBtn{
+  @apply flex flex-col justify-center items-center bg-[#E3B27D] rounded-[50%] aspect-square h-full p-10 text-2xl uppercase tracking-wider cursor-pointer hover:bg-[#a6845f]
+}

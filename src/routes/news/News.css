@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@tailwind utilities;
+.newsContainer{
+  @apply relative px-[8rem] pt-15 pb-25
+}
+.newsTop{
+  @apply flex flex-row justify-between w-full mb-4
+}
+.newsLeft{
+  @apply text-left w-1/2
+}
+.news{
+  @apply text-[18px] uppercase tracking-wider text-gray-400 text-left mb-2
+}
+.newsMainText{
+  @apply text-4xl md:text-5xl lg:text-5xl font-medium leading-tight mb-6
+}
+.newsRight{
+  @apply text-left w-2/5
+}
+.newsText{
+  @apply text-gray-300 max-w-lg h-1/2 flex items-center
+}
+.newsBtnCon{
+  @apply flex justify-start items-center h-1/2
+}
+.newsBtn{
+  @apply relative px-6 py-3 rounded-full hover:underline cursor-pointer font-bold uppercase tracking-widest
+}
+.newsGrid{
+  @apply grid grid-cols-2
+}
+.newsCard{
+  @apply text-left w-full my-15
+}
+.newsCardInfo{
+  @apply flex flex-row mb-5
+}
+.newsTheme{
+  @apply text-gray-500
+}
+.newsLine{
+  @apply bg-gray-600 w-[2px] ml-2
+}
+.newsDate{
+  @apply text-[#E3B27D] ml-3
+}
+.newsHeadline{
+  @apply text-left font-medium text-5xl/15 cursor-pointer hover:underline
+}
+.newsImg{
+  @apply absolute bottom-5/20 left-7/20 h-70
+}

@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@tailwind utilities;
+.reviewContainer{
+  @apply px-[8rem] pt-15 pb-25
+}
+.reviewTop{
+  @apply flex flex-row justify-between mb-12 w-full
+}
+.reviewLeft{
+  @apply w-1/2 text-left
+}
+.review{
+  @apply text-[18px] uppercase tracking-wider text-gray-400 text-left mb-2
+}
+.reviewText{
+  @apply text-4xl md:text-5xl lg:text-5xl font-medium leading-tight
+}
+.reviewGrid{
+  @apply flex flex-row justify-between w-full
+}
+.reviewCard{
+  @apply flex flex-col w-1/2 pr-4
+}
+.reviewCardTop{
+  @apply flex flex-row items-center mb-5
+}
+.reviewTextLine{
+  @apply w-2 h-9/10 bg-[#E3B27D] mr-4
+}
+.reviewCardText{
+  @apply italic text-2xl text-left
+}
+.reviewCardBottom{
+  @apply flex flex-row mt-10
+}
+.reviewer{
+  @apply flex flex-row justify-start items-center w-1/2
+}
+.reviewerInfo{
+  @apply text-left ml-5
+}
+.reviewerName{
+  @apply text-[22px] font-medium
+}
+.reviewerJob{
+  @apply text-[14px] text-[#E3B27D] uppercase tracking-wider
+}
+.reviewQuoteCon{
+  @apply flex justify-center items-center w-1/2
+}
+.reviewQuote{
+  @apply h-1/3
+}

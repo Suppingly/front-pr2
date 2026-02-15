@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@tailwind utilities;
+.footerCon{
+  @apply px-[8rem]
+}
+.footerTop{
+  @apply flex flex-row justify-between
+}
+.footerLeft{
+  @apply text-left px-5 w-1/4 pb-25
+}
+.footerText{
+  @apply text-gray-300 mb-10
+}
+.footerPhone{
+  @apply bg-[#E3B27D] w-fit p-3 flex flex-row justify-start items-center
+}
+.footerPhoneImg{
+  @apply mr-2
+}
+.footerRight{
+  @apply w-1/4 flex flex-col justify-start
+}
+.footerLinks{
+  @apply uppercase text-left text-xl font-medium mb-10
+}
+.footerLinksGrid{
+  @apply flex flex-row text-left text-gray-300
+}
+.footerLinksRow{
+  @apply w-1/2
+}
+.footerLink{
+  @apply cursor-pointer hover:underline my-1 text-left
+}
+.footerLine{
+  @apply w-full h-0.5 bg-gray-800
+}
+.footerBottom{
+  @apply flex flex-row justify-between py-8
+}
+.footerRights{
+  @apply text-gray-400
+}
+.footerSomeLinks{
+  @apply text-gray-400
+}
+.footerPol{
+  @apply cursor-pointer hover:underline
+}
+.footerPri{
+  @apply cursor-pointer hover:underline ml-15
+}

@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@tailwind utilities;
+.aboutContainer{
+  @apply my-20 px-[8rem]
+}
+.aboutTitle{
+  @apply text-[18px] uppercase tracking-wider text-gray-400 text-left
+}
+.aboutText{
+  @apply text-5xl font-bold leading-tight text-left w-7/10
+}
+.aboutStats{
+  @apply relative w-full
+}
+.aboutInfo{
+  @apply absolute -bottom-20 right-60 z-1 flex flex-row
+}
+.aboutStat{
+  @apply bg-zinc-800 p-14 text-center
+}
+.aboutStatN{
+  @apply text-5xl font-bold
+}
+.aboutStatInfo{
+  @apply text-gray-400 text-xl mt-1
+}
+.aboutMain{
+  @apply flex flex-row justify-between items-start my-10
+}
+.aboutSvgs{
+  @apply relative w-6/10
+}
+.aboutSvg1{
+  @apply absolute -top-18 -right-16 z-0
+}
+.aboutSvg2{
+  @apply absolute -bottom-10 -left-10 z-1
+}
+.aboutImg{
+  @apply w-full h-auto rounded-lg grayscale object-cover
+}
+.aboutMainText{
+  @apply space-y-6 w-3/10
+}
+.aboutTextInside{
+  @apply text-gray-300 leading-relaxed text-left
+}
+.aboutBtnCon{
+  @apply flex justify-start mt-6
+}
+.aboutBtn{
+  @apply relative px-6 py-3 rounded-full hover:underline font-bold uppercase tracking-widest cursor-pointer
+}
