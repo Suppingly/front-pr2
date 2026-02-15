@@ -1,1 +1,2 @@
-Засунуть файл в папку
+npm create vite@latest my-project
+npm install tailwindcss @tailwindcss/vite
