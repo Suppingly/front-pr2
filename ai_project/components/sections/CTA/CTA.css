@@ -1,0 +1,6 @@
+/* CTA circle pulse */
+.ctaCircleBtn { box-shadow: 0 20px 45px rgba(227, 178, 125, 0.35); animation: ctaPulse 2.4s ease-in-out infinite; }
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 20px 45px rgba(227, 178, 125, 0.25); }
+  50% { box-shadow: 0 30px 70px rgba(227, 178, 125, 0.6); }
+}

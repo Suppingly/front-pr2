@@ -1,0 +1,4 @@
+/* Underline hover used in blog buttons */
+.btn-underline { position: relative; transition: color 0.25s ease; }
+.btn-underline::after { content: ''; position: absolute; left: 0; bottom: -2px; width: 0; height: 2px; background: currentColor; transition: width 0.3s ease; }
+.btn-underline:hover::after { width: 100%; }
