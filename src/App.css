@@ -22,7 +22,7 @@ body{
   @apply flex justify-around items-center w-2/3 uppercase tracking-wider
 }
 .headerButtons{
-  @apply flex justify-between items-center w-5/40
+  @apply flex justify-between items-center w-1/8
 }
 .headerButton{
   @apply cursor-pointer

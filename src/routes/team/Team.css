@@ -24,6 +24,9 @@
 .teamGrid{
   @apply grid grid-cols-1 md:grid-cols-3 gap-8
 }
+.teamCard{
+  
+}
 .teamImg{
   @apply w-full
 }
@@ -38,6 +41,9 @@
 }
 .teamSoc{
   @apply absolute bottom-0 right-0 w-10 h-7/20 bg-[#E3B27D] flex flex-col items-center justify-around py-3
+}
+.teamLink{
+  @apply hover:scale-120 transition-transform duration-300
 }
 .teamPages{
   @apply flex justify-center mt-8 space-x-2
