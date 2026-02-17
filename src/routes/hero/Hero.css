@@ -40,7 +40,7 @@
   @apply text-gray-300
 }
 .heroPlayImg{
-  @apply absolute top-0 bottom-0 my-auto -start-[69px] hover:animate-[spinScale_1s_linear]
+  @apply absolute top-0 bottom-0 my-auto -start-[69px] hover:animate-[spinScale_1s_linear] cursor-pointer
 }
 @keyframes spinScale {
     0% {

@@ -24,9 +24,19 @@
 .teamGrid{
   @apply grid grid-cols-1 md:grid-cols-3 gap-8
 }
-.teamCard{
-  
+.team-slider { animation-duration: 400ms; animation-fill-mode: both; }
+.enter-next { animation-name: team-slide-next; }
+.enter-prev { animation-name: team-slide-prev; }
+ 
+@keyframes team-slide-next {
+ from { opacity: 0; transform: translateX(40px); }
+ to   { opacity: 1; transform: translateX(0); }
 }
+ 
+ @keyframes team-slide-prev {
+   from { opacity: 0; transform: translateX(-40px); }
+   to   { opacity: 1; transform: translateX(0); }
+ }
 .teamImg{
   @apply w-full
 }

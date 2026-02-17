@@ -9,8 +9,31 @@ import logoImg4 from '../../assets/4.png'
 import logoImg5 from '../../assets/5.png'
 import logoImg6 from '../../assets/6.png'
 import './Hero.css'
-
+import { useEffect, useState, type ReactElement } from 'react'
+interface Stat {
+  num:number;
+  stat:string;
+  timer:number;
+}
 function HeroPage(){
+  const stats:Stat[] = [
+    {
+      num:12000,
+      stat:'Проектов Выполнено',
+      timer:1000
+    },
+    {num:7000,stat:'Довольных Клиентов',timer:800},
+    {num:10,stat:'Лет Опыта',timer:1},
+    {num:270,stat:'Выигрышных Наград',timer:27}
+  ]
+  function Counter({val,time}:{val:Number,time:Number}):React.FC<Element>{
+    const [curVal,setCurVal] = useState(0)
+    useEffect(()=>{
+      curVal !== val && setTimeout(setCurVal,time,curVal+1)
+      console.log(curVal)
+    }, [curVal])
+    return <div>{val>1000?val/1000+' тыс.':val}</div>
+  }
   return (
     <>
       <div className="heroContainer">
@@ -35,22 +58,12 @@ function HeroPage(){
             <img src={heroImg} alt='hero' className="heroImg"/>
             <div className='heroStatsCon'>
             <div className="heroStats">
+              {stats.map((statItem)=>(
               <div className="heroStat">
-                <div className="heroStatTop">12 тыс+</div>
-                <div className="heroStatBottom">Проектов Выполнено</div>
+                <div className="heroStatTop"><Counter val={statItem.num} time={statItem.timer}/></div>
+                <div className="heroStatBottom">{statItem.stat}</div>
               </div>
-              <div className="heroStat">
-                <div className="heroStatTop">7 тыс+</div>
-                <div className="heroStatBottom">Довольных Клиентов</div>
-              </div>
-              <div className="heroStat">
-                <div className="heroStatTop">10+</div>
-                <div className="heroStatBottom">Лет Опыта</div>
-              </div>
-              <div className="heroStat">
-                <div className="heroStatTop">270+</div>
-                <div className="heroStatBottom">Выигрышных Наград</div>
-              </div>
+              ))}
             </div>
           </div>
           </div>

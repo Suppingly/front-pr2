@@ -47,6 +47,8 @@ function TeamPage(){
   const [sections,setSections]=useState<section[]>([
     { img:dotAcImg,alt:'-' },{ img:dotImg,alt:'0' },{ img:dotImg,alt:'0' }
   ])
+  const [teamIndex, setTeamIndex] = useState(0)
+  const [direction, setDirection] = useState<'next' | 'prev'>('next')
   return (
     <>
       <div className="teamContainer">
@@ -77,6 +79,8 @@ function TeamPage(){
                 }
                 newSectionList.push(sections[0])
                 setSections(newSectionList)
+                setTeamIndex((i) => (i == 0 ? teamMembers.length - 1 : i - 1))
+                setDirection('prev')
               }}>
                 <img src={arrowImg3} alt="<-" />
               </button>
@@ -97,15 +101,18 @@ function TeamPage(){
                     newSectionList[i+1]=sections[i]
                 }
                 setSections(newSectionList)
+                setTeamIndex((i) => (i == teamMembers.length - 1 ? 0 : i + 1))
+                setDirection('next')
               }}>
                 <img src={arrowImg2} alt="->" />
               </button>
             </div>
           </div>
         </div>
+        <div key={teamIndex} className={`team-slider ${direction === 'next' ? 'enter-next' : 'enter-prev'}`}>
         <div className="teamGrid">
           {teamMembers.map((memberCard)=>(
-          <div className='teamCard'>
+          <div className={`teamCard`}>
             <div className='relative'>
               <img src={memberCard.img} alt={memberCard.name} className="teamImg"/>
               {memberCard.hasLinks && <div className="teamSoc">
@@ -121,7 +128,7 @@ function TeamPage(){
             </div>
           </div>
           ))}
-        </div>
+        </div></div>
         <div className="teamPages">
           {sections.map((section)=>(
             <img src={section.img} alt={section.alt}/>
